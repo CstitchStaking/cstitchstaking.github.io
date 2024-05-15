@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Solana Validator">
-  <meta name="keywords" content="stake, staking, solana validator, solana node operator, solana stake validator, solana blockchain validator, SOL rewards, solana validation"solana validator, solana node operator, solana stake validator, solana blockchain validator, SOL rewards, solana validation">
+  <meta name="keywords" content="stake, staking, solana validator, solana node operator, solana stake validator, solana blockchain validator, SOL rewards, solana validation, solana validator, solana node operator, solana stake validator, solana blockchain validator, SOL rewards, solana validation">
     <title>Cross Stitch Staking</title>
     <link rel="icon" href="images/favics.png" type="image/png">  
     <link rel="stylesheet" href="style.css">
@@ -23,9 +23,50 @@
       width: 100%; 
       max-width: 800px; 
       margin: 0 auto; 
-      padding: 20px; 
+	  padding: 20px 20px 0px 20px; 
+	  box-sizing: border-box;
+	  
+  }
+  
+ @media only screen  and (max-width: 798px) {
+    .container {
+       
+      max-width: 100%; 
+      margin: 0 auto; 
+      padding: 10px 10px 0px 10px; 
+      overflow-x: hidden;
+	  box-sizing: border-box;
     }
-
+    .contact-container {
+     
+       max-width: 100%;
+       flex-direction: column;
+	   padding: 10px 10px 0px 10px; 
+	   box-sizing: border-box;
+	   gap: 5px;
+     }
+	 
+	.header {
+	   max-width: 100%;
+	   box-sizing: border-box;
+}
+	
+	.welcome-container {
+       max-width: 100%;
+       flex-direction: column;
+ 	   padding: 10px 10px 0px 20px; 
+ 	   box-sizing: border-box;
+ 	   gap: 5px;
+	}
+	 .start-earning-container {
+       max-width: 100%;
+       flex-direction: column;
+ 	   margin-bottom: 0px; }
+	 
+    
+    
+ }
+    
     main {
       padding-left: 20px; 
       padding-right: 20px;    }
@@ -39,11 +80,12 @@
       left: 0;
       width: 100%;
       max-width: 800px;
+	  box-sizing: border-box;
       margin: 0 auto; 
       background-color: rgb(0,45,92,0.95) ; 
       display: flex; 
       justify-content: center; 
-      padding: 20px; 
+      padding: 10px; 
       transition: background-color 0.3s ease-in-out; /* smooth transition */
     }
     .logo {
@@ -51,7 +93,24 @@
       height: 40px;
     }
     
-    
+	.cat {
+		width: 240px;
+	}
+	.welcome-container {
+        width: 100%; 
+        max-width: 800px;
+		display:flex;
+		align-items:center;
+		
+	}
+	.welcome-text {
+		color:#002d5c; 
+		font-family: 'Furore';
+		font-size: 25px;
+		line-height: 1.5;
+		margin-left: 20px;
+	}
+		
     ul {
       list-style-type: none;
     }
@@ -72,7 +131,7 @@
       color: white;
       text-decoration: none;
       display: block;
-      margin: 10px auto;
+      margin: 20px auto;
       font-size: 16px;
       font-family: 'Furore';
       border: none;
@@ -80,36 +139,54 @@
       cursor: pointer; 
     }
     button:hover { 
-  background-color: #c78e95
+      background-color: #c78e95
+  
 }
    .start-staking {
-  
+	  margin-bottom: 0px;
   
   }
+  .start-earning-container {
+	  
+      width: 100%; 
+      max-width: 800px; 
+      margin: 0 auto; 
+	  }
   
+  
+  .footer-image {
+	  left: 0; right: 0;
+      width: 100%;  /* image width */
+      height: auto;   
+    
+  }
+  .start-earning-text {
+	
+  	color:#002d5c ; 
+	font-family: 'Furore';
+	font-size: 20px; 
+	text-transform: uppercase;
+	margin: 0px 20px 10px 20px;
+	text-align: center;
+	
+  }
    .sm-icon {
         max-height: 18px;
     }
    .contact-container {
       position: relative;
       width: 100%; 
-      max-width: 800px; 
+      max-width: 800px;
       margin: 0 auto; 
-      padding: 20px; 
+      padding: 10px 10px 10px 20px; 
       background-color: rgb(0,45,92,0.95) ; 
       display: flex;
+	  box-sizing: border-box;
       justify-content: space-between;
     }
-    .footer-image {
-      position: absolute; 
-      bottom: 100%; 
-      left: 0px;
-      width: 80%;  /* image width */
-      height: auto;   
-      z-index: -1;     
-    }
+    
     .contact-item {
-      margin-right: 20px; 
+      margin-right: 5px; 
       
     }
     
@@ -127,8 +204,12 @@
 
   <main class="container">
     <section class="hero">
-    
-      <h2 style="color:#002d5c; font-family: 'Furore';font-size: 18px;">Secure, Reliable, and Rewarding Solana Validator</h2>
+    <div class="welcome-container">
+	  <img src="images/catinhoody.png" class="cat" alt="cross stitch cat in hoody validator">
+	  <div
+      class="welcome-text">Secure, Reliable, and Rewarding Solana Validator
+  </div> 
+</div>
       <p style="font-family: Georgia;">We offer a robust and secure platform for staking your SOL, contributing to the growth of the Solana network, and earning attractive returns.</p>
       <form action="https://solanabeach.io/validator/4DcSke272vfn4QQK49RNzPPj9pYasbyjoiY1a5UxLDH1">       
         <button>
@@ -153,6 +234,8 @@ We are committed to offering competitive staking rewards to our delegators. By d
     </section>
 
     <section class="start-staking" >
+		
+		
        
         <h2 style="color:#002d5c; font-family: 'Furore';font-size: 18px">How to get started </h2>
       <p>Staking with Cross Stitch Staking is a seamless and rewarding experience. </p>
@@ -162,33 +245,34 @@ We are committed to offering competitive staking rewards to our delegators. By d
         <li><strong style="color:#c78e95"> Choose CROSS STITCH STAKING:</strong> Find our validator node on the Solana staking platform or by using our delegation address.</li>
         <li><strong style="color:#c78e95"> Delegate your SOL:</strong> Select the amount of SOL you wish to stake and delegate it to our validator node.</li>
       </ul>
-      <form action="https://solanabeach.io/validator/4DcSke272vfn4QQK49RNzPPj9pYasbyjoiY1a5UxLDH1">       
-        
-      <button>STAKE NOW</button>
-      </form>
-      <p style="color:#002d5c; font-family: 'Furore';font-size: 14px">Start earning rewards today! Delegate your SOL to CROSS STITCH STAKING and contribute to a secure and thriving Solana network.</p>
-      
-    </section> 
-    
-    
+	
+  </section> 
   </main>
   
-  <div class="contact-container">
-    
-    <img src="images/back-wave.png" alt="big wave cross stitch" class="footer-image">
-<span style="color:#ffffff;font-family: 'Furore'" class="contact-item">Be in touch</span>
-      <span class="contact-item">
-        <a href=" mailto: cstitch.staking@gmail.com " target="_blank ">
-        <img class="sm-icon" src="images/gmail.png ">
-        </a>
-        </span>
-    <span class="contact-item">
+  	  <div class="start-earning-container">
+          <form action="https://solanabeach.io/validator/4DcSke272vfn4QQK49RNzPPj9pYasbyjoiY1a5UxLDH1">       
+          <button>
+            <span>STAKE NOW</span> 
+            <span style="font-family: Georgia; font-size: 14px">0% comission</span>
+          </button>
+          </form>
+		 <h3 class="start-earning-text">Start earning rewards today! Delegate your SOL to CROSS STITCH STAKING and contribute to a secure and thriving Solana network.</h3>
+         <img src="images/sol.png" alt="cross stitch solana blockchain" class="footer-image"> 
+       </div>  
+  
+        <div class="contact-container">
+            <span style="color:#ffffff;font-family: 'Furore'" class="contact-item">Be in touch</span>
+            <span class="contact-item">
+            <a href=" mailto: cstitch.staking@gmail.com " target="_blank ">
+            <img class="sm-icon" src="images/gmail.png ">
+            </a>
+            </span>
+            <span class="contact-item">
         
-        <a href="https://twitter.com/CstitchStaking"
-          
-  </a> <img class="sm-icon" src="images/twitt.png">
-      
-      </span>
-    </div>
+             <a href="https://twitter.com/CstitchStaking"
+             </a> 
+             <img class="sm-icon" src="images/twitt.png">
+             </span>
+          </div>
 </body>
 </html>
